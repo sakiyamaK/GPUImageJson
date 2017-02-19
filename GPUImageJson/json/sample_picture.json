@@ -1,0 +1,21 @@
+{
+  "ver": 1,
+  "key": "p1",
+  "type":"GPUImagePicture",
+  "method_list":[
+                 {
+                 "method_name":"initWithImage:",
+                 "method_type_list":["init"],
+                 "param_list":[
+                               {"type":"UIImage",
+                               "method_list":[{
+                                              "method_name":"imageNamed:",
+                                              "method_type_list":["init","class"],
+                                              "param_list":[{"type":"NSString",
+                                                            "value":"test.png"}],
+                                              }],
+                               },
+                               ]
+                 }
+                 ],
+}

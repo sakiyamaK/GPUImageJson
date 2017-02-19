@@ -1,0 +1,6 @@
+{
+  "ver": 1,
+  "key": "g1",
+  "type":"GPUImageBrightnessFilter",
+  "property_list":[{"property":"brightness", "type":"float", "value":0.5}],
+}
