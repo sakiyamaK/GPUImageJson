@@ -1,0 +1,43 @@
+{
+  "ver": 1,
+  "key": "g1",
+  "type":"GPUImageFilterGroup",
+  "create":[
+            {
+            "key":"f1",
+            "type":"GPUImageBrightnessFilter",
+            "property_list":[{"property":"brightness", "type":"float", "value":0.5}],
+            },
+            {
+            "key":"f2",
+            "type":"GPUImageAlphaBlendFilter",
+            "property_list":[{"property":"mix", "type":"float", "value":0.5}],
+            },
+            {
+            "key":"p1",
+            "type":"GPUImagePicture",
+            "method_list":[
+                           {
+                           "method_name":"initWithImage:",
+                           "method_type_list":["init"],
+                           "param_list":[
+                                         {"type":"UIImage",
+                                         "method_list":[{
+                                                        "method_name":"imageNamed:",
+                                                        "method_type_list":["init","class"],
+                                                        "param_list":[{"type":"NSString",
+                                                                      "value":"test.png"}],
+                                                        }],
+                                         },
+                                         ]
+                           }
+                           ],
+            },
+            ],
+  "add_targets":[
+                 {"from":"f1", "to":"f2", "location":0},
+                 {"from":"p1", "to":"f2", "location":1},
+                 ],
+  "initialFilters":["f1"],
+  "terminalFilter":"f2",
+}
